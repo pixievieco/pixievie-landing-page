@@ -1,132 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixievie Studio</title>
+  <title>Pixievie Studio - Creative Web, Design & Architecture Studio</title>
 
-  <!-- SEO (basic) -->
-  <meta name="description" content="Pixievie Studio is a creative studio offering web, design, and architectural services for growing brands." />
+  <!-- SEO and Metadata -->
+  <meta name="description" content="Pixievie Studio is a creative studio offering web development, UI/UX design, branding, and architectural services for growing brands in Manila, Philippines." />
+  <meta name="keywords" content="web development, UI/UX design, branding, architecture, creative studio, Manila, Philippines, Pixievie Studio" />
+  <meta name="author" content="Pixievie Studio" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="theme-color" content="#6B46C1" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pixievie.dev/" />
+  <meta property="og:title" content="Pixievie Studio - Creative Web, Design & Architecture Studio" />
+  <meta property="og:description" content="Pixievie Studio is a creative studio offering web development, UI/UX design, branding, and architectural services for growing brands." />
+  <meta property="og:image" content="assets/logopix.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://pixievie.dev/" />
+  <meta property="twitter:title" content="Pixievie Studio - Creative Web, Design & Architecture Studio" />
+  <meta property="twitter:description" content="Pixievie Studio is a creative studio offering web development, UI/UX design, branding, and architectural services for growing brands." />
+  <meta property="twitter:image" content="assets/logopix.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://pixievie.dev/" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/logopix.png" />
+  <link rel="apple-touch-icon" href="assets/logopix.png" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.css" />
 </head>
+
 <body>
 
+  <!-- HEADER/NAVIGATION -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#home" class="logo"><img src="assets/logopix.png" alt="Pixievie Studio" /></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <!-- HERO SECTION -->
-  <header class="hero">
+  <section id="home" class="hero">
     <h1>Pixievie Studio</h1>
-    <p class="tagline">Web • Design • Architecture</p>
+    <p class="tagline">Web & Apps • <span class="design-word">Design</span> • Architecture</p>
     <p class="description">
       We are a creative studio building digital experiences
       and architectural designs for growing brands and spaces.
     </p>
 
-    <a
-      href="https://instagram.com/pixievie.dev"
-      target="_blank"
-      class="btn"
-    >
-      Get a Free Consultation
+    <a href="https://instagram.com/pixievie.dev" target="_blank" class="btn">
+      Get Free Consultation
     </a>
-  </header>
-
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Website Design & Development</li>
-      <li>UI/UX & Brand Design</li>
-      <li>Architectural Design</li>
-      <li>3D Rendering & Visualization</li>
-    </ul>
   </section>
 
-  <!-- FEATURED WORK -->
-  <section class="featured">
-    <h2>Featured Work</h2>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p class="about-description">
+        Pixievie Studio is a passionate team of designers, developers, and architects dedicated to creating exceptional
+        digital and physical experiences. With years of combined experience, we bring creativity and technical expertise
+        to every project.
+      </p>
 
-    <div class="project">
-      <img src="project.jpg" alt="Sportswear Brand Website" />
+      <div class="team">
+        <!-- <div class="team-member">
+          <img src="https://via.placeholder.com/200x200/6B46C1/FFFFFF?text=Founder" alt="Founder" loading="lazy" />
+          <h3> Ramirez</h3>
+          <p>Founder & Lead Developer</p>
+          <p>Specializing in modern web technologies and user experience design.</p>
+        </div> -->
+        <!-- <div class="team-member">
+          <img src="https://via.placeholder.com/200x200/553C9A/FFFFFF?text=Designer" alt="Designer" loading="lazy" />
+          <h3>Jane Doe</h3>
+          <p>Creative Director</p>
+          <p>Expert in branding, UI/UX design, and visual storytelling.</p>
+        </div> -->
+        <!-- <div class="team-member">
+          <img src="https://via.placeholder.com/200x200/805AD5/FFFFFF?text=Architect" alt="Architect" loading="lazy" />
+          <h3>John Smith</h3>
+          <p>Architectural Designer</p>
+          <p>Creating innovative spaces that blend functionality with aesthetics.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
 
-      <div class="project-info">
-        <h3>Sportswear Brand Website</h3>
-        <p>
-          A clean, responsive website built for a local sportswear brand,
-          focused on modern design and mobile-first experience.
-        </p>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web & Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+      </div>
 
-        <a
-          href="https://aquaramaphsporstwear.netlify.app/"
-          target="_blank"
-          class="btn-outline"
-        >
-          View Live Website
-        </a>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="web">
+           <img src="assets/mock.png" alt="Aquarama Sportswear Website" loading="lazy" />
+           <div class="portfolio-overlay">
+            <h3>Aquarama Sportswear</h3>
+            <p>
+              Modern sportswear brand website designed and developed with a
+              clean, mobile-first layout.
+            </p>
+            <a href="https://aquaramaphsporstwear.netlify.app/" target="_blank" class="view-project-btn">
+              View Details
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="web">
+          <img src="assets/ps.png" alt="PocketSmart Finance App" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>PocketSmart App</h3>
+            <p>
+              Educational personal finance app designed and developed for a private client,
+              focused on building financial literacy for students.
+            </p>
+            <a href="https://pocketsmart.app/" target="_blank" class="view-project-btn">
+              View Details
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Pixievie Studio transformed our online presence completely. Their attention to detail and creative
+            approach exceeded our expectations."</p>
+          <div class="client-info">
+            <img src="https://via.placeholder.com/60x60/6B46C1/FFFFFF?text=Client" alt="Client" loading="lazy" />
+            <div>
+              <h4>Sarah Johnson</h4>
+              <p>CEO, TechCorp</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"The architectural designs were innovative and perfectly captured our vision. Highly recommend for any
+            design project."</p>
+          <div class="client-info">
+            <img src="https://via.placeholder.com/60x60/553C9A/FFFFFF?text=Client" alt="Client" loading="lazy" />
+            <div>
+              <h4>Mike Chen</h4>
+              <p>Founder, BuildRight</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Professional, creative, and delivered on time. Pixievie Studio is our go-to for all digital needs."</p>
+          <div class="client-info">
+            <img src="https://via.placeholder.com/60x60/805AD5/FFFFFF?text=Client" alt="Client" loading="lazy" />
+            <div>
+              <h4>Emily Davis</h4>
+              <p>Marketing Director, InnovateCo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i data-lucide="code"></i>
+          <h3>Website Design & Development</h3>
+          <p>Custom websites built with modern technologies, optimized for performance and user experience.</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="palette"></i>
+          <h3>UI/UX & Brand Design</h3>
+          <p>Comprehensive design solutions from branding to user interface design that tell your story.</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="building"></i>
+          <h3>Architectural Design</h3>
+          <p>Innovative architectural solutions that blend functionality, aesthetics, and sustainability.</p>
+        </div>
+        <div class="service-card">
+          <i data-lucide="eye"></i>
+          <h3>3D Rendering & Visualization</h3>
+          <p>Stunning 3D visualizations that bring your concepts to life before construction begins.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROCESS -->
   <section class="process">
-    <h2>How It Works</h2>
+    <div class="container">
+      <h2>How It Works</h2>
 
-    <div class="steps">
-      <div class="step">
-        <span>01</span>
-        <h3>Free Consultation</h3>
-        <p>We discuss your ideas, goals, and requirements.</p>
-      </div>
+      <div class="steps">
+        <div class="step">
+          <span>01</span>
+          <h3>Free Consultation</h3>
+          <p>We discuss your ideas, goals, and requirements.</p>
+        </div>
 
-      <div class="step">
-        <span>02</span>
-        <h3>Design & Build</h3>
-        <p>We design and develop your project with clarity and care.</p>
-      </div>
+        <div class="step">
+          <span>02</span>
+          <h3>Design & Build</h3>
+          <p>We design and develop your project with clarity and care.</p>
+        </div>
 
-      <div class="step">
-        <span>03</span>
-        <h3>Launch</h3>
-        <p>Your project goes live and ready for use.</p>
+        <div class="step">
+          <span>03</span>
+          <h3>Launch</h3>
+          <p>Your project goes live and ready for use.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="final-cta">
-    <h2>Got an idea? Let’s build it.</h2>
-    <p>
-      Message us for a free consultation and see how
-      we can bring your idea to life.
-    </p>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Ready to bring your vision to life? Let's start a conversation.</p>
 
-    <a
-      href="https://instagram.com/pixievie.dev"
-      target="_blank"
-      class="btn-outline"
-    >
-      DM Us on Instagram
-    </a>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i data-lucide="mail"></i>
+            <div><br>
+              <h3>Email</h3>
+              <p>pixievie.dev@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="instagram"></i>
+            <div>
+              <h3>Instagram</h3>
+              <p>@pixievie.dev</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Manila, Philippines</p>
+            </div>
+          </div>
+        </div>
 
-    <a
-      href="mailto:pixievie.dev@gmail.com?subject=Project Inquiry - Pixievie Studio"
-      class="btn-outline"
-    >
-      Email Us
-    </a>
+        <form class="contact-form" id="contactForm"><br>
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>
-      Pixievie Studio — Web • Design • Architecture
-    </p>
-    <p>
-      © 2026 Pixievie Studio
-    </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pixievie Studio</h3>
+          <p>Creating digital experiences and architectural designs for growing brands.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/pixievie.dev" target="_blank"><i data-lucide="instagram"></i></a>
+            <a href="mailto:pixievie.dev@gmail.com"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Brand Design</li>
+            <li>Architecture</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pixievie Studio. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top">
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
   </footer>
 
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <p>Loading Pixievie Studio...</p>
+    </div>
+  </div>
+
   <!-- JS -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
